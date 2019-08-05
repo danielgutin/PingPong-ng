@@ -1,0 +1,32 @@
+.NewRecord {
+    direction: rtl;
+}
+
+.NewRecord .ant-modal-content button:first-child {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.NewRecord_content img {
+    display: block;
+    margin: 0 auto;
+    height: 15rem;
+}
+
+.NewRecord_content input {
+    display: block;
+    margin: 2rem auto;
+    border: 0;
+    font-size: 1.8rem;
+    padding: .5rem 1rem;
+    background-color: #eee;
+    text-align: right;
+    outline-color: var(--main-color);
+}
+
+.NewRecord_content p {
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}

@@ -1,0 +1,22 @@
+.RemoveRecord {
+    direction: rtl;
+}
+
+.RemoveRecord .ant-modal-content button:first-child {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.RemoveRecord_content img {
+    display: block;
+    margin: 0 auto;
+    height: 15rem;
+}
+
+.RemoveRecord_content p {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}

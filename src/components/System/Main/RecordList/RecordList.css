@@ -1,0 +1,60 @@
+.RecordList {
+    overflow: auto;
+    height: 78vh;
+}
+
+.RecordList-square::-webkit-scrollbar-track,
+.RecordList::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+
+.RecordList-square::-webkit-scrollbar,
+.RecordList::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.RecordList-square::-webkit-scrollbar-thumb,
+.RecordList::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 25px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                       color-stop(.5, rgba(255, 255, 255, .2)),
+                       color-stop(.5, transparent), to(transparent));
+}
+
+
+.RecordList_norecords {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.RecordList_norecords img {
+    height: 30rem;
+}
+
+.RecordList_norecords h3 {
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+}
+
+
+.RecordList-square {
+    display: grid;
+    overflow: auto;
+    grid-template-columns: repeat(4, 1fr);
+    width: 73.9vw;
+    height: 78vh;
+    grid-gap: 1rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: 10rem;
+    grid-auto-rows: 10rem;
+    padding: 1rem;
+}

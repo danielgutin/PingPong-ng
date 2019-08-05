@@ -1,0 +1,182 @@
+.SideNav {
+   box-shadow: -1px -5px 10px rgba(0,0,0,.8);
+   background-color: var(--second-color);
+   color: #fff;
+   position: relative;
+   padding: 1rem;
+   direction: rtl;
+}
+
+.SideNav_logo {
+    height: 25vh;
+}
+
+.SideNav_logo img {
+    top: 0;
+    right: 0;
+    height: 22rem;
+    width: 19vw;
+    position: absolute;
+}
+
+
+/* Menu Component */
+.ant-menu-item,
+.ant-menu-item-group-title,
+.ant-menu-submenu-title,
+.ant-menu-submenu-title svg,
+.ant-menu-submenu,
+.ant-menu-submenu,
+.ant-menu-submenu-arrow::before,
+.ant-menu-submenu-arrow::after,
+.ant-menu  {
+    background-color: var(--second-color);
+    color: #fff;
+
+    
+    font-size: 1.9rem !important;
+}
+
+.ant-menu-root {
+    overflow: auto;
+    height: 30vh;
+    overflow-x: hidden;
+}
+.ant-menu.ant-menu-hidden {
+    overflow: auto;
+    height: 30vh;
+    overflow-x: hidden;
+}
+
+.ant-menu::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.ant-menu::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.ant-menu::-webkit-scrollbar-thumb
+{
+    border-radius: 4px;
+    background-color: var(--main-color);
+    
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                       color-stop(.5, rgba(255, 255, 255, .2)),
+                       color-stop(.5, transparent), to(transparent));
+}
+
+
+
+.ant-menu-item:hover,
+.ant-menu-submenu:hover,
+.ant-menu-submenu-arrow:hover::before,
+.ant-menu-submenu-arrow:hover::after,
+.ant-menu-submenu-title:hover,
+.ant-menu-item-group-title:hover {
+    color: var(--main-color) !important;
+}
+
+
+.ant-menu-submenu > .ant-menu {
+    background-color: var(--second-color);
+}
+
+.ant-menu-submenu-title svg {
+    margin-left: 1rem;
+}
+
+.ant-menu-submenu-title span {
+    font-size: 1.9rem;
+    letter-spacing: .2rem;
+}
+
+.ant-menu-item.ant-menu-item-selected {
+    background-color: var(--second-color) !important;
+}
+
+
+/* SideNav Credit  */
+
+.SideNav_actions {
+    position: absolute;   
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    width: 40%;
+}
+
+.SideNav_actions li {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 1rem 0;
+}
+
+.SideNav_actions li:hover {
+    color: var(--main-color);
+}
+
+
+.SideNav_credit {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.SideNav_create_category {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 2.2rem;
+    padding: .5rem 1rem;
+    letter-spacing: .3rem;
+    transform: translate(-50%, -50%);
+}
+
+.SideNav_logout {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    font-size: 2.2rem;
+    padding: .5rem 1rem;
+    letter-spacing: .3rem;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Small Screens */
+@media screen and (max-width: 1300px) {
+    .SideNav {
+        width: 23vw;
+    }
+
+    .SideNav_logo img {
+        height: 22rem;
+        width: 23vw;
+    }
+
+    .ant-menu {
+        width: 22vw !important;
+    }
+
+    .SideNav_create_category,
+    .SideNav_logout {
+        width: 70%;
+    }
+
+    .SideNav_credit {
+        width: 70%;
+        font-weight: lighter;
+    }
+}

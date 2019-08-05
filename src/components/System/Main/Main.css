@@ -1,0 +1,137 @@
+.Main {
+    position: relative;
+}
+
+/**************** Main Top Nav *****************/
+.Main_controller {
+    height: 10vh;
+    direction: rtl;
+    padding: 2rem;
+    box-shadow: 1px 2px 10px rgba(0,0,0,.3);
+}
+
+.Main_controller-new {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--success);
+    color:  var(--success);
+    box-shadow: none;
+    margin-left: 2rem;
+}
+
+.Main_controller-remove {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding: .5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--error);
+    color:  var(--error);
+    box-shadow: none;
+}
+
+.Main_controller-edit {
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    padding: .5rem 1rem;
+    background: transparent;
+    border: 1px solid #448AFF;
+    color:  #448AFF;
+    box-shadow: none;
+}
+
+
+.Main_controller-new:hover {
+    background-color: var(--success);
+    color: #fff;
+}
+
+.Main_controller-remove:hover {
+    background-color: var(--error);
+    color: #fff;
+}
+
+.Main_controller-edit:hover {
+    color: #fff;
+    background-color:#448AFF;
+}
+
+.Main_controller-new span,
+.Main_controller-remove span,
+.Main_controller-edit span {
+    padding-left: 1rem;
+}
+
+.Main_controller-new span,
+.Main_controller-remove span,
+.Main_controller-edit span,
+.Main_controller-new svg,
+.Main_controller-remove svg,
+.Main_controller-edit svg {
+    font-size: 1.9rem;
+}
+
+.ant-input-search input {
+    font-size: 1.9rem ;
+    width: 300px;
+    height: 4.2rem;
+}
+
+
+.Main_content-square {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 5rem;
+    padding: .2rem;
+    font-size: 2rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/**************** Main Content *****************/
+.Main_content {
+    height: 90vh;
+    position: relative;
+    padding: 2rem;
+    direction: rtl;
+}
+
+.Main_content_cat {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+
+.Main_content-header {
+    background-color: var(--main-color);
+    height: 5vh;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    padding: 1rem;
+    position: relative;
+}
+
+.Main_content-header span {
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.none {
+    display: none;
+}
+
+
+/* =================== Media Queries  =====================*/
+/**************** Main Top Nav *****************/
+@media screen and (min-width: 1520px) {
+    .Main_controller-edit {
+        left: 15%;
+    }
+    
+}

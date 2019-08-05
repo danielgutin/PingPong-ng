@@ -1,0 +1,93 @@
+.RecordItem {
+    height: 7vh;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr;
+    padding: 1.2rem;
+}
+
+.RecordItem:nth-child(2n+ 2) {
+    background-color: #eee;
+}
+
+.RecordItem span {
+    font-size: 2rem;
+}
+
+.RecordItem  .online,
+.RecordItem  .offline,
+.RecordItem .intialize {
+    width: 8rem;
+    padding: .5rem 1rem;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.RecordItem  .online {
+    background-color: var(--success);
+}
+
+.RecordItem  .offline {
+    background-color: var(--error);
+}
+
+.RecordItem .intialize {
+    background-color: #666;
+}
+
+.RecordItem_actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    font-size: 1.7rem;
+}
+
+
+
+
+/* Square version */
+.RecordList-square .RecordItem {
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: right;
+    position: relative;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+}
+
+.RecordList-square .RecordItem {
+    background-color: #eee;
+}
+
+.RecordList-square .RecordItem span {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.RecordList-square .RecordItem  .online,
+.RecordList-square .RecordItem  .offline,
+.RecordList-square .RecordItem .intialize {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.RecordItem  .online {
+    background-color: var(--success);
+}
+
+.RecordItem  .offline {
+    background-color: var(--error);
+}
+
+.RecordItem .intialize {
+    background-color: #666;
+}
+
+.RecordList-square .RecordItem_actions {
+    display: none;
+}
+

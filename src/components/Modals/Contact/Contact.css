@@ -1,0 +1,34 @@
+.ContactModal {
+    direction: rtl;
+    text-align: center;
+}
+
+.ContactModal .ant-modal-title {
+    font-size: 3rem;
+    letter-spacing: .2rem;
+}
+
+.ContactModal img {
+    height: 10rem;    
+    margin: 2rem 0;
+}
+
+.ContactModal p,
+.ContactModal li {
+    font-size: 1.7rem;
+}
+
+.ContactModal ul {
+    padding-right: 3rem;
+    list-style: none;
+}
+
+.ContactModal li {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.ant-modal-content button:first-child {
+    display: none;
+}
+
