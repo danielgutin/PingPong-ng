@@ -9,7 +9,7 @@
 - [x] Search of Equipment by name & IP
 - [x] toggle between square display Mode & List display mode
 - [x] admin panel for users managment purposes
-- [x] Monitor over 500 equipments in less than second
+- [x] Monitor over 1000 equipments in less than second
 
 
 
